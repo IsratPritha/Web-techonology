@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login and Registration Form::</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="./portal_images/coverlogin.jpg" alt="Images">
+        <div class="text">
+          <span class="text-1">Every new team member brings with them <br> a fresh set of challenges</span>
+          <span class="text-2">Let's get in touch</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="./portal_images/super-shop-bangladesh.jpg "alt="Images" >
+        <div class="text">
+          <span class="text-1">Super Shop Management <br> System</span>
+          <span class="text-2">Let's get in touch</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+
+            <div class="title">Login to our Portal</div>
+             <a href="#">Or Return Home_Page</a>
+
+
+          <form action="index.php" method="POST" enctype="multipart/form-data">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required name="lemail">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required name="lpass">
+              </div>
+              <!-- <div class="text"><a href="#">Forgot password?</a></div> -->
+              <div class="button input-box">
+                <input type="submit" value="Login" name="login">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+  
+    <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your full name" required name="aname">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your new email" required name="aemail">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Justify tAdmin email to access sigup" required name="temail">
+               </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required name="apass">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="address" required name="aaddress">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-id-card-alt"></i>
+                <input type="text" placeholder="Contact +880" required name="acontact">
+              </div>
+              <div class="input-box">
+                 <i class="fas fa-globe-asia"></i>
+                <input type="text" placeholder="Country" required name="acountry">
+              </div>
+              <div class="input-box">
+                <p>Type Selection:</p>
+                 <select name="type2" required>
+                    <option value="admin">admin</option>
+                    <option value="manager">manager</option>
+                    <option value="employee">employee</option>
+                  </select>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Sign Up" name="signup">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
